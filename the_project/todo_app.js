@@ -6,4 +6,4 @@ http.createServer(function (req, res) {
     res.end('Welkom to todo app');
 }).listen(port);
 
-console.log( "Server started in port " + port );
+console.log( "Server started in port: " + port );
