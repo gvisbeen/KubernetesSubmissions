@@ -1,7 +1,8 @@
 ## Log output hashgenerator pod
 
-Output of the app is in the file hashgenerator-dep.log  
 Used commands are in build.sh  
-Docker image specifics in Dockerfile  
+Docker image specifics in Dockerfile incl ENV for PORT 
   
-kubernetes config is in manifests/hashgenerator-dep.yaml
+kubernetes config is in manifests/hashgenerator-dep.yaml  
+  
+program is in the_project/todo_app.js  
