@@ -4,4 +4,4 @@
 
 ### Chapter 2
 
-- [1.1. Hash generator logfile](https://github.com/gvisbeen/KubernetesSubmissions/tree/1.1/log_output)
+- [1.1. Hash generator logfile](https://github.com/gvisbeen/KubernetesSubmissions/tree/1.1)
