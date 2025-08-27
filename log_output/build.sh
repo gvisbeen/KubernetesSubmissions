@@ -1,12 +1,12 @@
-docker build -t hash_generator:1.1 .
-k3d image import hash_generator:1.1
-kubectl create deployment hashgenerator-dep --image=hash_generator:1.1
+docker build -f ./log_output/Dockerfile -t todo_app:1.2 .
+
+k3d image import todo_app:1.2
+kubectl create deployment todo-app --image=todo_app:1.2
 
 kubectl get pods
-#hashgenerator-dep-7ddc9646f4-b6tvf   1/1     Running   0          33s
+#todo-app-5d5779648f-xhshq   1/1     Running   0          15s
+
 kubectl get deployments
-#hashgenerator-dep   1/1     1            1           75s
+#todo-app   1/1     1            1           43s
 
-kubectl logs -f hashgenerator-dep-7ddc9646f4-b6tvf > hashgenerator-dep.log
-
-kubectl get deploy hashgenerator-dep -o yaml > ./manifests/hashgenerator-dep.yaml
+kubectl get deploy todo-app -o yaml > ./log_output/manifests/hashgenerator-dep.yaml

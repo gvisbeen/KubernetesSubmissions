@@ -3,7 +3,10 @@ LABEL authors="gvisbeen"
 
 WORKDIR /usr/src/app
 
-COPY ../todo_app.js ./todo_app.js
+COPY ./the_project .
+
+ENV PORT=8080
+EXPOSE ${PORT}
 
 #ENTRYPOINT []
-CMD ["node","--env-file=.env","./todo_app.js"]
+CMD ["node","./todo_app.js"]
