@@ -1,9 +1,9 @@
-FROM php:8.1-alpine
+FROM node:24-alpine3.21
 LABEL authors="gvisbeen"
 
 WORKDIR /usr/src/app
 
-COPY ./main.php ./main.php
+COPY ../todo_app.js ./todo_app.js
 
 #ENTRYPOINT []
-CMD ["php","./main.php"]
+CMD ["node","--env-file=.env","./todo_app.js"]
