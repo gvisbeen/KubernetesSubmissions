@@ -1,8 +1,18 @@
-## Log output hashgenerator pod
+## 1.3 Declarative approach  
+  
+Created a deployment yaml file in:  
+  
+manifests/deployment.yaml  
 
-Used commands are in build.sh  
-Docker image specifics in Dockerfile incl ENV for PORT 
+tested with:  
+kubectl apply -f manifests/deployment.yaml  
   
-kubernetes config is in manifests/hashgenerator-dep.yaml  
+result:  
+deployment.apps/todo-app created  
+
+show running pods:  
+kubectl get pods  
   
-program is in the_project/todo_app.js  
+result:  
+NAME                                 READY   STATUS             RESTARTS   AGE  
+todo-app-6fbb6bcfd4-95lf8            0/1     ImagePullBackOff   0          2m40s  
