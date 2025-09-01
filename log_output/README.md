@@ -1,7 +1,7 @@
 ## 1.3 Declarative approach  
   
 Created a deployment yaml file in:  
-  
+
 manifests/deployment.yaml  
 
 tested with:  
