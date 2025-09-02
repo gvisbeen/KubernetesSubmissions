@@ -1,6 +1,6 @@
-## 1.3 Declarative approach  
+## 1.4 The project: step 2  
   
-Created a deployment yaml file in:  
+Created a deployment yaml file of the project in:  
 
 manifests/deployment.yaml  
 
