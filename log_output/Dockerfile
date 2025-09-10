@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 
 COPY ./the_project .
 
-ENV PORT=8080
+#ENV PORT=8080
 EXPOSE ${PORT}
 
 #ENTRYPOINT []
