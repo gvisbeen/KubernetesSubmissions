@@ -1,4 +1,4 @@
-## 1.4 The project: step 2  
+## 1.5 The project: step 3  
   
 Altered the deployment yaml file to include the PORT env variable of the project in:  
 
